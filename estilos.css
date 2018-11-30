@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body{
+  text-align: center;
+  background-image: url(imagenes/Escudo-UPIICS1556A.png);
+  background-size: 100px;
+  background-opacit
+}
+h1{
+  display: inline-block;
+  position: relative;
+  color: black;
+  font-family:'Oswald';
+
+  font-size: 50px;
+}
+
+.ipn img {
+  width: 30%;
+
+  float: left;
+}
+
+.u img {
+  width: 25%;
+  float: right;
+}
+
+div.separador2{
+    width: 45%;
+    height: 1px;
+    float: left;
+}
+div.lector{
+  width: 200px;
+  float: left;
+}
+
+@media screen and (max-width: 700px){
+h1{
+font-size:100%;
+}
+div.lector{
+  font-size:100%;
+}
+}
+
+@media screen and (max-width: 400px){
+.contenido{
+font-size:50%;
+}
+div.lector{
+  font-size:50%;
+}
+}
