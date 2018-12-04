@@ -15,18 +15,26 @@
 				 <h3>Alumno Inscrito</h3>
           <?php 
             require("conexion.php");
-            $cont = $_GET['content'];
+            include("recibe.php");
+            $boleta = $_GET["cont"];
+            echo $boleta;
+            //echo "La Boleta es: ".$_GET['cont'];
+            /*
             mysql_select_db($db,$conexion) or die ("Error al conectar a base de datos");
             
-            $registros = mysql_query("SELECT * FROM alumnos WHERE ID = '$cont'");
+            $registros = mysql_query("SELECT * FROM alumnos WHERE ID ='$cont'");
               while ($registro = mysql_fetch_array($registros)){
-                echo $_GET;
+                
                 echo $registro['ID'];
+                echo " ";
                 echo $registro['NOM'];
-                echo $registro['APE'];
+                echo " ";
+                echo $registro['APE'];;
+                // + " " + $registro['NOM'] + " " +echo $registro['APE'];
+            }*/
+
             
-            
-            }
+
 
             /*
             $query = mysql_query("SELECT * FROM alumnos WHERE ID = '$cont'");
